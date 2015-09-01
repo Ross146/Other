@@ -1,0 +1,36 @@
+.customselect{
+    display: inline-block;
+    width: 200px;
+}
+.customselect .title{
+    background: white;
+    width: 200px;
+    cursor: pointer;
+    text-align: left;
+    border: 2px groove #ADD8E6;
+    padding: 0;
+    margin: 0;    
+}
+.customselect ul{
+    position: absolute;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #add8e6;
+    border-left: 1px solid #add8e6;
+    border-right: 1px solid #add8e6;
+    display: none;
+}
+.customselect li {
+    cursor: pointer;
+}
+.customselect li:nth-child(even){
+    background-color: lightgray;
+}
+.customselect li:hover {
+    background: red;
+}
+.customselect.open ul {
+    display: block;
+}
